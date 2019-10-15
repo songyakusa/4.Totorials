@@ -6,22 +6,25 @@ fun main(args: Array<String>){
     tim = "Tim Buchalka"
     println(tim)
 
-    var timSalary: Int = 32
-    var monthly: Int =timSalary * 4
-    println(timSalary)
-    println(monthly)
+    var timsWeekSalary: Int = 32
+    var timsMonthlySalary: Int =timsWeekSalary * 4
+    println("Tim's $ weekly salary is $$timsWeekSalary")
+    println("Monthly, that comes to $timsMonthlySalary")
 
     println()
 
     val apples : Int = 6
     val oranges :Int = 5
     var fruit:Int = apples - oranges
-    println(fruit)
+    println("$apples apples - $oranges oranges leaves $fruit piece(s) of fruit")
 
-    println(apples / 4)
+    println("A quarter of the apples is ${apples / 4}")
 
     println()
-    val weeks:Int =130
+    val weeks:Int =234
     val years: Double = weeks /52.0
-    println(years)
+    println("$weeks weeks is $years years")
+
+    println("My name is $tim")
+    println("I can print \$tim")
 }
