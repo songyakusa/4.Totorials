@@ -1,19 +1,11 @@
 import com.example.a4totorials.Player
 
 fun main(args: Array<String>){
-//    val uglyTroll = Troll("Ugly Troll")
-//    println(uglyTroll)
-//    uglyTroll.takeDamage(30)
-//    println(uglyTroll)
-
-//    val vlad = Vampyre("Vlad")
-//    println(vlad)
-//    vlad.takeDamage(8)
-//    println(vlad)
-    for (i in 1..10){
+    //for (i in 1..10){
     val dracula = VampyreKing("Dracula")
     println(dracula)
-    while (dracula.lives > 0 ) {
+   dracula.lives = 0
+    do{
         if (dracula.dodges()) {
             continue;
         }
@@ -23,9 +15,9 @@ fun main(args: Array<String>){
         } else {
             dracula.takeDamage(80)
         }
-      }
+      } while (dracula.lives > 0)
         println("----------------------------------------------------------")
-    }
+//    }
 //    val conan = Player("Conan")
 //    conan.getLoot(Loot("Invisibility", LootType.POTION, 4.0))
 //    conan.getLoot(Loot("Mithril", LootType.ARMOR, 183.0))
