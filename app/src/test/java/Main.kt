@@ -10,4 +10,18 @@ fun main(args: Array<String>){
     var monthly: Int =timSalary * 4
     println(timSalary)
     println(monthly)
+
+    println()
+
+    val apples : Int = 6
+    val oranges :Int = 5
+    var fruit:Int = apples - oranges
+    println(fruit)
+
+    println(apples / 4)
+
+    println()
+    val weeks:Int =130
+    val years: Double = weeks /52.0
+    println(years)
 }
