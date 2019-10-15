@@ -1,31 +1,32 @@
 fun main(args: Array<String>){
-    println("Hello World")
-    println("My first Kotlin program")
+    //val lives = 0
+    //
+    //var isGameOver = (lives < 1)
+    //printin(isGameOver)
+    //
+    //if(isGmaeOver){
+    // println("Gmae over")
+    // }else{
+    //  println("You're still alive!")
+    // }
 
-    val jim = "James T Kirk"
-    var tim: String
-    tim = "Tim Buchalka"
-    println(tim)
+    println("How old are you")
+    val age = readLine()!!.toInt()
+    println("age is $age")
 
-    val timsWeekSalary: Int = 32
-    val timsMonthlySalary: Int =timsWeekSalary * 4
-    println("Tim's $ weekly salary is $$timsWeekSalary")
-    println("Monthly, that comes to $timsMonthlySalary")
+    val message:String
+    message = when {
+        age < 18 -> "You're too young to vote"
+        age == 100 -> "Congratulation"
+        else -> "You can vote"
+    }
+//    message = if(age < 18){
+//        "You're too young to vote"
+//    }else if(age == 100){
+//        "Congratulation"
+//    }else{
+//        "You can vote"
+//    }
 
-    println()
-
-    val apples : Int = 6
-    val oranges :Int = 5
-    val fruit = apples - oranges
-    println("$apples apples - $oranges oranges leaves $fruit piece(s) of fruit")
-
-    println("A quarter of the apples is ${apples / 4}")
-
-    println()
-    val weeks:Int =234
-    val years: Double = weeks /52.0
-    println("$weeks weeks is $years years")
-
-    println("My name is $tim")
-    println("jim is $jim")
+    println(message)
 }
