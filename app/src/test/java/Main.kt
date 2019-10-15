@@ -33,4 +33,9 @@ fun main(args: Array<String>){
     tim.weapon = Weapon("Spear",14)
     //println(tim.weapon.name)
     tim.show()
+
+    val redPotion = Loot("Red Potion", LootType.POTION , 7.50)
+    tim.inventory.add(redPotion)
+    tim.showInventory()
+    println(tim.toString())
 }
